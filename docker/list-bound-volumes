@@ -1,0 +1,2 @@
+#!/bin/bash
+docker inspect -f '{{printf "%s:\n" .Name}} {{range .Mounts}}{{printf "%s : %s\n" .Source .Destination}} {{else}} None {{end}}'  $(docker ps --all --format {{.ID}})

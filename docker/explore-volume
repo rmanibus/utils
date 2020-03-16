@@ -1,0 +1,2 @@
+#!/bin/bash
+docker run -ti --rm -v $1:/$1 ubuntu
